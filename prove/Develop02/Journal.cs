@@ -1,24 +1,29 @@
+using System.IO;
+
 public class Journal
 {
     public List<Entry> _entries;
 
     public void AddEntry(Entry newEntry)
     {
-
+        _entries.Add(newEntry);
     }
 
     public void DisplayAll()
     {
-
     }
 
-    public void SaveToFile(string file)
+    public void SaveToFile(string newEntry)
     {
-
+        using (StreamWriter writer = new StreamWriter("journal.txt", true))
+    {
+        writer.WriteLine(newEntry);
+    }
     }
 
-    public void LoadFromFile(string file)
+    public string[] LoadFromFile(string journal)
     {
+        return File.ReadAllLines("journal.txt");
 
     }
 }
