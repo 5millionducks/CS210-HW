@@ -6,7 +6,6 @@ class Program
     {
         string _entryText = "";
         string randomPrompt = "";
-        // string fullEntry = "";
         DisplayMessage();
         int menuNumber = -1;
         List<string> _entries = new List<string>();
@@ -34,7 +33,6 @@ class Program
 
             else if (menuNumber == 3)
             {
-                Console.WriteLine("This will be the Load");
                 Journal myJournal = new Journal();
                 string[] content = myJournal.LoadFromFile("journal.txt");
                 string journal = string.Join(Environment.NewLine, content);
