@@ -4,6 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+        Scripture scripture = new Scripture();
+
+        scripture.DisplayScripture();
+        string userInput = Console.ReadLine();
+        while(!scripture.isAllHidden() && userInput.ToLower() != "quit") {
+            scripture.HideRandomWords();
+            scripture.DisplayScripture();
+            userInput = Console.ReadLine();
+        }
+
+        
     }
 }
