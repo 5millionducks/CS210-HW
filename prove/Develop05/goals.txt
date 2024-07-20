@@ -1,0 +1,2 @@
+0
+SimpleGoal,a,a,50,False
