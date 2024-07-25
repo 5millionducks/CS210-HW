@@ -1,4 +1,3 @@
-// Classe base
 public class Event(string title, string description, string date, string time, Address address)
 {
     private readonly string _title = title;
