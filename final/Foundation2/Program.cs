@@ -10,9 +10,9 @@ class Program
         Customer customer1 = new("Evelyn Arasim", address1);
         Customer customer2 = new("Alice Rushton", address2);
 
-        Product product1 = new("Boxed Set - Mistborn - Special Edition 2024", 412, 149.59, 1);
-        Product product2 = new("25' Monitor for Desktop", 652, 2499.89, 1);
-        Product product3 = new("Custom Soft Tap Board", 106, 69.29, 3);
+        Product product1 = new("Boxed Set - Mistborn - Special Edition 2024", 412, 139.99, 1);
+        Product product2 = new("25' Monitor for Desktop", 652, 2199.99, 1);
+        Product product3 = new("Custom Soft Tap Board", 106, 82.99, 3);
 
         Order order1 = new(customer1);
         order1.AddProduct(product1);
